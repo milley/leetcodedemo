@@ -30,6 +30,7 @@ public class ArrayOperatorTest {
         arrayOperator.insert(2, 10);
         assertEquals(arrayOperator.get(2), 10);
         assertEquals(arrayOperator.count, 5);
+        assertEquals(arrayOperator.get(4), 8);
     }
 
     @Test
