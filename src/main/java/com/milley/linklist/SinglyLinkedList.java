@@ -1,4 +1,4 @@
-package structure.linklist;
+package com.milley.linklist;
 
 /**
  * 1）单链表的插入、删除、查找操作；
@@ -7,8 +7,16 @@ package structure.linklist;
 public class SinglyLinkedList {
     private Node head = null;
 
+    public SinglyLinkedList(Node head) {
+        this.head = head;
+    }
+
+    public Node getHead() {
+        return head;
+    }
+
     public Node findByValue(int value) {
-        for (Node node = head; node.next != null; node = node.next) {
+        for (Node node = head; node != null; node = node.next) {
             if (node.data == value) {
                 return node;
             }
@@ -18,7 +26,7 @@ public class SinglyLinkedList {
 
     public Node findByIndex(int index) {
         int i = 0;
-        for (Node node = head; node.next != null; node = node.next) {
+        for (Node node = head; node != null; node = node.next) {
             if (i == index) {
                 return node;
             }
@@ -165,7 +173,7 @@ public class SinglyLinkedList {
                 System.out.println("The size = 1");
                 return true;
             } else {
-                while (slow.next != null && fast.next != null) {
+                while (fast.next != null && fast.next.next != null) {
                     slow = slow.next;
                     fast = fast.next.next;
                 }
@@ -175,9 +183,9 @@ public class SinglyLinkedList {
                 Node right = null;
                 if (fast.next == null) {
                     right = slow.next;
-                    left = inverseLinkList(slow);
-                    System.out.println("The first left item: %d" + left.data);
-                    System.out.println("The first right item: %d" + right.data);
+                    left = inverseLinkList(slow).next;
+                    System.out.printf("The first left item: %d\n",  left.data);
+                    System.out.printf("The first right item: %d\n", right.data);
                 } else {
                     right = slow.next;
                     left = inverseLinkList(slow);
@@ -189,8 +197,11 @@ public class SinglyLinkedList {
 
     //带结点的链表翻转
     public Node inverseLinkList_head(Node p){
-        Node Head = p;
+        Node Head = new Node(9999, null);
+        Head.next = p;
+
         Node cur = p.next;
+        p.next = null;
         Node next = null;
 
         while (cur != null) {
@@ -207,7 +218,7 @@ public class SinglyLinkedList {
         Node pre = null;
         Node r = head;
         Node next = null;
-        while (r.next != null) {
+        while (r != p) {
             next = r.next;
             r.next = pre;
             pre = r;
@@ -234,5 +245,6 @@ public class SinglyLinkedList {
         public int getData() {
             return data;
         }
+        public Node getNext() { return next; }
     }
 }
