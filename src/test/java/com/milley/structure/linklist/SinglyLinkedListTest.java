@@ -1,6 +1,5 @@
 package com.milley.structure.linklist;
 
-import com.milley.linklist.SinglyLinkedList;
 import org.junit.Before;
 import org.junit.Test;
 

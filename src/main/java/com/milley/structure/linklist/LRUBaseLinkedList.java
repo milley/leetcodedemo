@@ -1,4 +1,4 @@
-package com.milley.linklist;
+package com.milley.structure.linklist;
 
 public class LRUBaseLinkedList<T> {
 

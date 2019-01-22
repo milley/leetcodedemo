@@ -1,6 +1,5 @@
 package com.milley.structure.linklist;
 
-import com.milley.linklist.LRUBaseLinkedList;
 import org.junit.Before;
 import org.junit.Test;
 

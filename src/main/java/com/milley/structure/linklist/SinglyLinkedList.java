@@ -1,4 +1,4 @@
-package com.milley.linklist;
+package com.milley.structure.linklist;
 
 /**
  * 1）单链表的插入、删除、查找操作；
