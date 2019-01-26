@@ -96,6 +96,6 @@ public class LinkedListAlgoTest {
         LinkedListAlgo.Node nodeRight2 = new LinkedListAlgo.Node(2, nodeRight4);
         LinkedListAlgo.Node nodeRightMiddle = LinkedListAlgo.findMiddleNode(nodeRight2);
         LinkedListAlgo.printAll(nodeRightMiddle);
-        assertEquals(4, nodeRightMiddle.getData());
+        assertEquals(6, nodeRightMiddle.getData());
     }
 }
