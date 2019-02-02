@@ -3,11 +3,11 @@ package com.milley.structure.recursion;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Fabonacci {
+public class Fibonacci {
     private int depth = 0;
     private Map<Integer, Integer> cacheMapping;
 
-    public Fabonacci() {
+    public Fibonacci() {
         cacheMapping = new HashMap<>();
     }
 
