@@ -146,6 +146,7 @@ public class BinarySearch {
         }
     }
 
+    // 循环数组二分查找
     public static int binarySearchLoopArray(int[] a, int n, int value) {
         if (n == 1 && a[0] == value) return 0;
         if (n == 1 && a[0] != value) return -1;
