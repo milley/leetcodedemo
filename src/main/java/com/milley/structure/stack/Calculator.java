@@ -151,6 +151,7 @@ public class Calculator {
 
 
     public static void main(String[] args) throws IOException {
+        long startTime=System.nanoTime();
         Calculator calculator = new Calculator();
         System.out.println(calculator.calculate("1+2*5/3+6/4*2"));
         System.out.println(calculator.calculate("3+5/2"));
@@ -174,5 +175,7 @@ public class Calculator {
         }while(charsRead>0);
         String stringReadFromReader = builder.toString();
         System.out.println(calculator.calculate(stringReadFromReader));
+        long endTime=System.nanoTime();
+        System.out.println("程序运行时间： "+(endTime-startTime)+"ns");
     }
 }
