@@ -1,4 +1,4 @@
-package com.milley.TopKFrequentElements;
+package com.milley.topkfrequentelements;
 
 import java.util.*;
 

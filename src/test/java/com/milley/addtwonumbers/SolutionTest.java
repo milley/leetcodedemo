@@ -1,4 +1,4 @@
-package com.milley.AddTwoNumbers;
+package com.milley.addtwonumbers;
 
 import org.junit.Test;
 

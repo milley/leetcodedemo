@@ -1,4 +1,4 @@
-package com.milley.KthLargestElementInAStream;
+package com.milley.kthlargestelementinastream;
 
 import java.util.PriorityQueue;
 

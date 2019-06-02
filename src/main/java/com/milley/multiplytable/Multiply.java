@@ -1,4 +1,4 @@
-package com.milley.MultiplyTable;
+package com.milley.multiplytable;
 
 public class Multiply {
     public static void main(String[] args) {

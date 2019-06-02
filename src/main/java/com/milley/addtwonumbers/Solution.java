@@ -1,4 +1,4 @@
-package com.milley.AddTwoNumbers;
+package com.milley.addtwonumbers;
 
 
 public class Solution {

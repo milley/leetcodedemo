@@ -1,4 +1,4 @@
-package com.milley.MaximumSubarray;
+package com.milley.maximumsubarray;
 
 public class PolitenessSolution {
     /**

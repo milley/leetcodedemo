@@ -1,4 +1,4 @@
-package com.milley.CountAndSay;
+package com.milley.countandsay;
 
 public class Solution {
     public String countAndSay(int n) {

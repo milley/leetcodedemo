@@ -1,10 +1,10 @@
-package com.milley.TwoSum;
+package com.milley.twosum;
 
 import org.junit.Test;
 
-import static com.milley.TwoSum.Solution.twoSum;
-import static com.milley.TwoSum.Solution.twoSum1;
-import static com.milley.TwoSum.Solution.twoSum2;
+import static com.milley.twosum.Solution.twoSum;
+import static com.milley.twosum.Solution.twoSum1;
+import static com.milley.twosum.Solution.twoSum2;
 import static org.junit.Assert.assertEquals;
 
 public class SolutionTest {

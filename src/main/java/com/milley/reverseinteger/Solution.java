@@ -1,4 +1,4 @@
-package com.milley.ReverseInteger;
+package com.milley.reverseinteger;
 
 public class Solution {
     public static int reverse(int x) {

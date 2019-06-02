@@ -1,4 +1,4 @@
-package com.milley.TwoSum;
+package com.milley.twosum;
 
 import java.util.HashMap;
 import java.util.Map;

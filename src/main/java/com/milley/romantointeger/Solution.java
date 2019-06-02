@@ -1,4 +1,4 @@
-package com.milley.RomanToInteger;
+package com.milley.romantointeger;
 
 import java.util.HashMap;
 import java.util.Map;
