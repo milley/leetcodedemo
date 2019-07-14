@@ -31,8 +31,18 @@ public class Solution {
         return n * (n + 1) / 2;
     }
 
+    public int[] simpleDistributeCandies(int candies, int n) {
+        int[] res = new int[n];
+        for (int i = 0; candies > 0; i++) {
+            res[i % n] += Math.min(candies, i + 1);
+            candies -= i + 1;
+        }
+        return res;
+    }
+
     public static void main(String[] args) {
-        int[] arr = new Solution().distributeCandies(800, 40);
+        //int[] arr = new Solution().distributeCandies(800, 40);
+        int[] arr = new Solution().simpleDistributeCandies(800, 40);
         for (int i = 0; i < arr.length; i++) {
             System.out.println(arr[i]);
         }
