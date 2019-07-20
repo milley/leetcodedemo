@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.PriorityQueue;
 
+/**
+ * @author milley
+ */
 public class Solution {
     private PriorityQueue<Integer> queue;
 
