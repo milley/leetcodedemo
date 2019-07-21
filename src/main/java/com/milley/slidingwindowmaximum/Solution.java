@@ -1,8 +1,6 @@
 package com.milley.slidingwindowmaximum;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.PriorityQueue;
+import java.util.*;
 
 /**
  * @author milley
@@ -38,10 +36,37 @@ public class Solution {
         return arr.stream().mapToInt(Integer::valueOf).toArray();
     }
 
+    public int[] maxSlidingWindowByQueue(int[] nums, int k) {
+        if (nums.length == 0) {
+            return new int[]{};
+        }
+
+        Deque<Integer> window = new ArrayDeque<>();
+        int[] res = new int[nums.length - k + 1];
+
+        for (int i = 0; i < nums.length; ++i) {
+            if (i >= k && window.getFirst() <= i - k) {
+                window.pop();
+            }
+
+            Iterator<Integer> iter = window.iterator();
+            while (!window.isEmpty() && iter.next() <= nums[i]) {
+                iter.remove();
+            }
+            window.add(i);
+
+            if (i >= k - 1) {
+                res[i - k + 1] = nums[window.getFirst()];
+            }
+        }
+        return res;
+    }
+
     public static void main(String[] args) {
-        //int[] arr = new int[]{1, 3, -1, -3, 5, 3, 6, 7};
-        int[] arr = new int[]{};
-        int[] res = new Solution().maxSlidingWindow(arr, 3);
+        int[] arr = new int[]{1, 3, -1, -3, 5, 3, 6, 7};
+        //int[] arr = new int[]{};
+        //int[] res = new Solution().maxSlidingWindow(arr, 3);
+        int[] res = new Solution().maxSlidingWindowByQueue(arr, 3);
         for (int i : res) {
             System.out.println(i);
         }
