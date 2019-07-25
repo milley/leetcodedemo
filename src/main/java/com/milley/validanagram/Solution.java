@@ -1,9 +1,12 @@
 package com.milley.validanagram;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
 public class Solution {
+    private static final int ALPHABET_SIZE = 26;
+
     public boolean isAnagram(String s, String t) {
         Map<Character, Integer> sMap = new HashMap<>(s.length());
         Map<Character, Integer> tMap = new HashMap<>(t.length());
@@ -22,8 +25,8 @@ public class Solution {
     }
 
     public boolean isAnagramB(String s, String t) {
-        int[] sArray = new int[26];
-        int[] tArray = new int[26];
+        int[] sArray = new int[ALPHABET_SIZE];
+        int[] tArray = new int[ALPHABET_SIZE];
 
         for (char ch : s.toCharArray()) {
             sArray[ch - 'a']++;
@@ -33,14 +36,16 @@ public class Solution {
             tArray[ch - 'a']++;
         }
 
-        for (int i = 0, j = 0; i < 26 && j < 26;) {
+        /*for (int i = 0, j = 0; i < ALPHABET_SIZE && j < ALPHABET_SIZE;) {
             if (sArray[i] != tArray[j]) {
                 return false;
             }
             i++;
             j++;
         }
-        return true;
+        return true;*/
+        //return Arrays.equals(sArray, tArray);
+        return sArray.equals(tArray);
     }
 
     public static void main(String[] args) {
