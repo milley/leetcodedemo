@@ -1,5 +1,8 @@
 package com.milley.structure.calculate;
 
+/**
+ * @author milley
+ */
 public class SqrtDemo {
     /**
      * 计算大于1的平方根
