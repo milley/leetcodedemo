@@ -1,5 +1,8 @@
 package com.milley.dayoftheyear;
 
+/**
+ * @author milley
+ */
 public class Solution {
     public static int dayOfYear(String date) {
         char[] dateArray = date.toCharArray();
