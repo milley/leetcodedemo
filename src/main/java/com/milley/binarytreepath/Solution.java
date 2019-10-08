@@ -1,5 +1,7 @@
 package com.milley.binarytreepath;
 
+import com.milley.common.TreeNode;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,13 +26,6 @@ public class Solution {
         }
     }
 
-    public static class TreeNode {
-        int val;
-        TreeNode left, right;
-        TreeNode(int x) {
-            this.val = x;
-        }
-    }
 
     public static void main(String[] args) {
         TreeNode root = new TreeNode(1);

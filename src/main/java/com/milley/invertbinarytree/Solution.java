@@ -1,5 +1,10 @@
 package com.milley.invertbinarytree;
 
+import com.milley.common.TreeNode;
+
+/**
+ * @author milley
+ */
 public class Solution {
     public TreeNode invertTree(TreeNode root) {
         if (root == null) {
@@ -10,15 +15,5 @@ public class Solution {
         root.right = invertTree(leftChild);
 
         return root;
-    }
-
-
-    public class TreeNode {
-        int val;
-        TreeNode left, right;
-
-        public TreeNode(int val) {
-            this.val = val;
-        }
     }
 }

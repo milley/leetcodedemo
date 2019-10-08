@@ -1,5 +1,7 @@
 package com.milley.symmetrictree;
 
+import com.milley.common.TreeNode;
+
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -41,16 +43,6 @@ public class Solution {
         }
         return (sourceTree.val == destTree.val) && compareMirrorTree(sourceTree.left, destTree.right)
                 && compareMirrorTree(sourceTree.right, destTree.left);
-    }
-
-    public static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        public TreeNode(int val) {
-            this.val = val;
-        }
     }
 
     public static void main(String[] args) {

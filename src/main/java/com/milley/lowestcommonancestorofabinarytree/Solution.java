@@ -1,17 +1,11 @@
 package com.milley.lowestcommonancestorofabinarytree;
 
+import com.milley.common.TreeNode;
+
 /**
  * @author milley
  */
 public class Solution {
-    public static class TreeNode {
-        int val;
-        TreeNode left, right;
-        TreeNode(int val) {
-            this.val = val;
-        }
-    }
-
     public static TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         if (root == null || root == p || root == q) {
             return root;

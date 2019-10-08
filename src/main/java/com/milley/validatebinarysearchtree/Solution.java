@@ -1,17 +1,11 @@
 package com.milley.validatebinarysearchtree;
 
+import com.milley.common.TreeNode;
+
 /**
  * @author milley
  */
 public class Solution {
-    public static class TreeNode {
-        int val;
-        TreeNode left, right;
-
-        public TreeNode(int val) {
-            this.val = val;
-        }
-    }
     public boolean isValidBST(TreeNode root) {
         return isValid(root, null, null);
     }
