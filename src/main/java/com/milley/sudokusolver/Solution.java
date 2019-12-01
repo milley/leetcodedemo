@@ -31,7 +31,7 @@ public class Solution {
         return true;
     }
 
-    private boolean isValid(char[][] board, char ch, int idx, int jdx) {
+    public static boolean isValid(char[][] board, char ch, int idx, int jdx) {
         for (int t = 0; t < board.length; t++) {
             if (board[t][jdx] != '.' && board[t][jdx] == ch) {
                 return false;
