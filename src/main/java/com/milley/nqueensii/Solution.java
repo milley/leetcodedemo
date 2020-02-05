@@ -46,6 +46,11 @@ public class Solution {
         return count;
     }
 
+    /**
+     * get the sequence of 1 in binary from low endian
+     * @param n input number
+     * @return the sequence of 1 start from low endian
+     */
     private static int getSeqOfOneFromLowEndian(int n) {
         int seq = 0;
         if (n == 0) {
@@ -64,7 +69,7 @@ public class Solution {
 
     private void printNumbers(Set<Integer> set) {
         for (Integer i : set) {
-            System.out.print(getSeqOfOneFromLowEndian(i.intValue())+ " ");
+            System.out.print(getSeqOfOneFromLowEndian(i)+ " ");
         }
         System.out.println();
     }
