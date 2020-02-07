@@ -1,5 +1,8 @@
 package com.milley.countandsay;
 
+/**
+ * @author milley
+ */
 public class Solution {
     public String countAndSay(int n) {
         if (n == 1) {
