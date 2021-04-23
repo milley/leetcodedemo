@@ -41,7 +41,7 @@ public class Solution {
         profit[0][0][0] = 0;
         profit[0][0][1] = -prices[0];
 
-        profit[0][1][0] = 0;;
+        profit[0][1][0] = 0;
         profit[0][1][1] = -prices[0];
 
         profit[0][2][0] = 0;
